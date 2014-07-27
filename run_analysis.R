@@ -1,3 +1,5 @@
+library(doBy)
+
 X_train <- read.table('train/X_train.txt', header=F)
 y_train <- read.table('train/y_train.txt', header=F)
 subject_train <- read.table('train/subject_train.txt', header=F)
@@ -52,6 +54,6 @@ names(tidy1_df) <- sub('-','.',names(tidy1_df))
 
 write.table(tidy1_df, file="clean_set.csv")
 
-df_an <- summaryBy(list(names(tidy1_df)[3:81], c("subject","activity")), data=tidy1_df, FUN=c(mean,sd))
+df_an <- summaryBy(list(names(tidy1_df)[3:68], c("subject","activity")), data=tidy1_df, FUN=c(mean,sd))
 
 write.table(df_an, file="summary_set.csv")

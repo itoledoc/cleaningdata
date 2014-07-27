@@ -1,0 +1,19 @@
+---
+title: "CookBook"
+author: "Ignacio Toledo"
+date: "07/27/2014"
+output: html_document
+---
+
+The *summary_set.csv* text file contains a tiny data set derived from the cleaning and analysis of the raw data
+available at <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>. The description
+of the raw data is available at <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
+
+The tidy data set is composed by a single table with the following columns:
+
+```{r}
+source('run_analysis.R')
+names(df_an)
+```
+
+The string after the last period indicates the kind of analysis done over the variable described by the string before that period. E.g, fBodyAcc.std.X.sd is the standard deviation of the variable **fBodyAcc.std.X** for a particular activity of one subject.
