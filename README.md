@@ -1,7 +1,7 @@
 Repository Description
 ======================
 
-The cleaningdata repository consist af a single script `run_analysis.R`, a cookbook in Rmd (`cookbook.Rmd`) and html (`cookbook.html`) format, and this README text file.
+The cleaningdata repository consist af a single script `run_analysis.R`, a cookbook in Rmd (`cookbook.Rmd`) and Word (`cookbook.doc`) format, and this README text file.
 
 The `run_analysis.R` script contains the code to read the HAR database, merge the training and
 test data sets, extract the relevant measurements (features), rename them with human readable
